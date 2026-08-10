@@ -8,6 +8,7 @@ namespace FileConverter.ConversionJobs
     using System.Globalization;
     using System.IO;
     using System.Text.RegularExpressions;
+    using System.Threading;
     using CommunityToolkit.Mvvm.DependencyInjection;
     using FileConverter.Controls;
     using FileConverter.Services;
@@ -88,7 +89,9 @@ namespace FileConverter.ConversionJobs
 
         protected virtual void FillFFMpegArgumentsList()
         {
-            const string baseArgs = "-n -progress pipe:1";
+            // '-nostdin' prevents ffmpeg from consuming the standard input it inherits from the application.
+            // '-progress pipe:1' writes a machine readable progress report on the standard output, it is read by ReadProgressStream.
+            const string baseArgs = "-n -nostdin -progress pipe:1";
 
             bool customCommandEnabled = this.ConversionPreset.GetSettingsValue<bool>(ConversionPreset.ConversionSettingKeys.EnableFFMPEGCustomCommand);
             if (customCommandEnabled)
@@ -446,6 +449,17 @@ namespace FileConverter.ConversionJobs
                 {
                     using (Process exeProcess = Process.Start(this.ffmpegProcessStartInfo))
                     {
+                        // The standard output is redirected and receives the '-progress' report, so it must be
+                        // drained on its own thread: if nobody reads that pipe, ffmpeg blocks on write as soon as
+                        // the operating system buffer is full and the conversion never terminates.
+                        Thread progressThread = new Thread(() => this.ReadProgressStream(exeProcess.StandardOutput))
+                        {
+                            Name = "FFMpegProgressReader",
+                            IsBackground = true,
+                        };
+
+                        progressThread.Start();
+
                         using (StreamReader reader = exeProcess.StandardError)
                         {
                             while (!reader.EndOfStream)
@@ -464,6 +478,8 @@ namespace FileConverter.ConversionJobs
                         }
 
                         exeProcess.WaitForExit();
+
+                        progressThread.Join();
                     }
                 }
                 catch
@@ -491,8 +507,53 @@ namespace FileConverter.ConversionJobs
             }
         }
 
+        /// <summary>
+        /// Read the progress report that ffmpeg writes on its standard output (see the '-progress pipe:1' argument).
+        /// </summary>
+        /// <param name="reader">The standard output stream of the ffmpeg process.</param>
+        /// <remarks>
+        /// This stream must be consumed while the process is running. The report is a flat list of 'key=value' lines,
+        /// one block per update, and each block is terminated by 'progress=continue' (or 'progress=end' for the last one).
+        /// </remarks>
+        private void ReadProgressStream(StreamReader reader)
+        {
+            string line;
+            while ((line = reader.ReadLine()) != null)
+            {
+                int separatorIndex = line.IndexOf('=');
+                if (separatorIndex <= 0)
+                {
+                    continue;
+                }
+
+                if (line.Substring(0, separatorIndex) != "out_time_us")
+                {
+                    continue;
+                }
+
+                // The value is expressed in microseconds, and is 'N/A' until the first frame is written.
+                string value = line.Substring(separatorIndex + 1).Trim();
+                if (!long.TryParse(value, NumberStyles.Integer, CultureInfo.InvariantCulture, out long outTimeInMicroseconds))
+                {
+                    continue;
+                }
+
+                this.actualConvertedDuration = TimeSpan.FromTicks(outTimeInMicroseconds * (TimeSpan.TicksPerMillisecond / 1000));
+
+                if (this.fileDuration.Ticks > 0)
+                {
+                    this.Progress = Math.Min(1f, this.actualConvertedDuration.Ticks / (float)this.fileDuration.Ticks);
+                }
+            }
+        }
+
         private void ParseFFMPEGOutput(string input)
         {
+            if (string.IsNullOrEmpty(input))
+            {
+                return;
+            }
+
             Match match = this.durationRegex.Match(input);
             if (match.Success && match.Groups.Count >= 6)
             {

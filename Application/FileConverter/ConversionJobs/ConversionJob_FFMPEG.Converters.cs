@@ -101,6 +101,13 @@ namespace FileConverter.ConversionJobs
                     transformArgs += ",";
                 }
 
+                if (hwAccel == Helpers.HardwareAccelerationMode.CUDA)
+                {
+                    // transpose/vflip/hflip run on the cpu and can't consume the cuda frames produced by
+                    // scale_cuda, so the frames have to be brought back in system memory before rotating them.
+                    transformArgs += "hwdownload,format=yuv420p,";
+                }
+
                 transformArgs += rotationArgs;
             }
 
