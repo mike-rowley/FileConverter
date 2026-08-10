@@ -17,10 +17,12 @@ namespace FileConverter.Services
 
     public class UpgradeService : ObservableObject, IUpgradeService
     {
+        // This fork publishes its own releases: the upgrade must be checked against this repository, otherwise the
+        // application replaces itself with the build of the upstream repository and loses the changes of this fork.
 #if DEBUG
-        private const string BaseURI = "https://raw.githubusercontent.com/Tichau/FileConverter/integration/";
+        private const string BaseURI = "https://raw.githubusercontent.com/mike-rowley/FileConverter/integration/";
 #else
-        private const string BaseURI = "https://raw.githubusercontent.com/Tichau/FileConverter/master/";
+        private const string BaseURI = "https://raw.githubusercontent.com/mike-rowley/FileConverter/master/";
 #endif
 
         [NotNull]
@@ -155,7 +157,7 @@ namespace FileConverter.Services
         private async Task<UpgradeVersionDescription> DownloadLatestVersionDescription()
         {
 #if BUILD32
-            Uri uri = new Uri(Helpers.BaseURI + "version (x86).xml");
+            Uri uri = new Uri(UpgradeService.BaseURI + "version (x86).xml");
 #else
             Uri uri = new Uri(UpgradeService.BaseURI + "version.xml");
 #endif
