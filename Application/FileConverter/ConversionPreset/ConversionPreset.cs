@@ -321,7 +321,7 @@ namespace FileConverter
 
         public string GenerateOutputFilePath(string inputFilePath, int numberIndex, int numberMax)
         {
-            return PathHelpers.GenerateFilePathFromTemplate(inputFilePath, this.OutputType, this.OutputFileNameTemplate, numberIndex, numberMax);
+            return PathHelpers.GenerateFilePathFromTemplate(inputFilePath, this.OutputType, this.OutputFileNameTemplate, numberIndex, numberMax, this.FullName);
         }
 
         public void SetSettingsValue(string settingsKey, string value)

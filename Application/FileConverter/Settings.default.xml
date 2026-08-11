@@ -28,7 +28,7 @@
         <Settings Key="AudioBitrate" Value="155" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="To Mp4" OutputType="Mp4" IsDefaultSettings="true">
         <InputTypes>gif</InputTypes>
@@ -57,7 +57,7 @@
         <Settings Key="AudioBitrate" Value="155" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="To Mp4 (low quality)" OutputType="Mp4" IsDefaultSettings="true">
         <InputTypes>gif</InputTypes>
@@ -86,7 +86,7 @@
         <Settings Key="AudioBitrate" Value="96" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="To Webm" OutputType="Webm" IsDefaultSettings="true">
         <InputTypes>gif</InputTypes>
@@ -114,7 +114,7 @@
         <Settings Key="VideoRotation" Value="0" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="To Ogv" OutputType="Ogv" IsDefaultSettings="true">
         <InputTypes>gif</InputTypes>
@@ -142,7 +142,7 @@
         <Settings Key="AudioBitrate" Value="160" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="To Avi" OutputType="Avi" IsDefaultSettings="true">
         <InputTypes>gif</InputTypes>
@@ -170,7 +170,7 @@
         <Settings Key="AudioBitrate" Value="190" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="To Gif" OutputType="Gif" IsDefaultSettings="true">
         <InputTypes>xcf</InputTypes>
@@ -215,7 +215,7 @@
         <Settings Key="VideoScale" Value="1" />
         <Settings Key="VideoRotation" Value="0" />
         <Settings Key="VideoFramesPerSecond" Value="15" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="To Gif (low quality)" OutputType="Gif" IsDefaultSettings="true">
         <InputTypes>xcf</InputTypes>
@@ -260,7 +260,7 @@
         <Settings Key="VideoScale" Value="0.75" />
         <Settings Key="VideoRotation" Value="0" />
         <Settings Key="VideoFramesPerSecond" Value="10" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="To Ogg" OutputType="Ogg" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -296,7 +296,7 @@
         <Settings Key="AudioChannelCount" Value="0" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="To Flac" OutputType="Flac" IsDefaultSettings="true">
         <InputTypes>wav</InputTypes>
@@ -308,7 +308,7 @@
         <Settings Key="AudioChannelCount" Value="0" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="To Wav" OutputType="Wav" IsDefaultSettings="true">
         <InputTypes>aac</InputTypes>
@@ -344,7 +344,7 @@
         <Settings Key="AudioChannelCount" Value="0" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="To Mp3" OutputType="Mp3" IsDefaultSettings="true">
         <InputTypes>aac</InputTypes>
@@ -381,7 +381,7 @@
         <Settings Key="AudioChannelCount" Value="0" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="To Aac" OutputType="Aac" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -417,7 +417,7 @@
         <Settings Key="AudioChannelCount" Value="0" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Extract DVD to Mp4" OutputType="Mp4" IsDefaultSettings="true">
         <InputTypes>vob</InputTypes>
@@ -430,7 +430,7 @@
         <Settings Key="AudioBitrate" Value="155" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p:v)DVD Extraction\(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p:v)DVD Extraction\(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Extract DVD to Mkv" OutputType="Mkv" IsDefaultSettings="true">
         <InputTypes>vob</InputTypes>
@@ -443,7 +443,7 @@
         <Settings Key="AudioBitrate" Value="155" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p:v)DVD Extraction\(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p:v)DVD Extraction\(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Extract DVD to Flac" OutputType="Flac" IsDefaultSettings="true">
         <InputTypes>vob</InputTypes>
@@ -451,7 +451,7 @@
         <Settings Key="AudioChannelCount" Value="0" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p:m)DVD Extraction\(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p:m)DVD Extraction\(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Extract DVD to Ogg" OutputType="Ogg" IsDefaultSettings="true">
         <InputTypes>vob</InputTypes>
@@ -460,7 +460,7 @@
         <Settings Key="AudioChannelCount" Value="0" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p:m)DVD Extraction\(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p:m)DVD Extraction\(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Extract DVD to Mp3" OutputType="Mp3" IsDefaultSettings="true">
         <InputTypes>vob</InputTypes>
@@ -470,7 +470,7 @@
         <Settings Key="AudioChannelCount" Value="0" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p:m)DVD Extraction\(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p:m)DVD Extraction\(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Extract CDA to Flac" OutputType="Flac" IsDefaultSettings="true">
         <InputTypes>cda</InputTypes>
@@ -478,7 +478,7 @@
         <Settings Key="AudioChannelCount" Value="0" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p:m)CDA Extraction\(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p:m)CDA Extraction\(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Extract CDA to Ogg" OutputType="Ogg" IsDefaultSettings="true">
         <InputTypes>cda</InputTypes>
@@ -487,7 +487,7 @@
         <Settings Key="AudioChannelCount" Value="0" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p:m)CDA Extraction\(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p:m)CDA Extraction\(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Extract CDA to Mp3" OutputType="Mp3" IsDefaultSettings="true">
         <InputTypes>cda</InputTypes>
@@ -497,7 +497,7 @@
         <Settings Key="AudioChannelCount" Value="0" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p:m)CDA Extraction\(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p:m)CDA Extraction\(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="To Png" OutputType="Png" IsDefaultSettings="true">
         <InputTypes>xcf</InputTypes>
@@ -527,7 +527,7 @@
         <Settings Key="ImageRotation" Value="0" />
         <Settings Key="ImageClampSizePowerOf2" Value="False" />
         <Settings Key="ImageMaximumSize" Value="0" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="To Png (paged)" OutputType="Png" IsDefaultSettings="true">
         <InputTypes>xcf</InputTypes>
@@ -546,7 +546,7 @@
         <Settings Key="ImageRotation" Value="0" />
         <Settings Key="ImageClampSizePowerOf2" Value="False" />
         <Settings Key="ImageMaximumSize" Value="0" />
-        <OutputFileNameTemplate>(p)(f) (n:i) of (n:c)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) (n:i) of (n:c) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="To Webp" OutputType="Webp" IsDefaultSettings="true">
         <InputTypes>xcf</InputTypes>
@@ -577,7 +577,7 @@
         <Settings Key="ImageRotation" Value="0" />
         <Settings Key="ImageClampSizePowerOf2" Value="False" />
         <Settings Key="ImageMaximumSize" Value="0" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="To Avif" OutputType="Avif" IsDefaultSettings="true">
         <InputTypes>xcf</InputTypes>
@@ -608,7 +608,7 @@
         <Settings Key="ImageRotation" Value="0" />
         <Settings Key="ImageClampSizePowerOf2" Value="False" />
         <Settings Key="ImageMaximumSize" Value="0" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="To Jpg" OutputType="Jpg" IsDefaultSettings="true">
         <InputTypes>xcf</InputTypes>
@@ -639,7 +639,7 @@
         <Settings Key="ImageRotation" Value="0" />
         <Settings Key="ImageClampSizePowerOf2" Value="False" />
         <Settings Key="ImageMaximumSize" Value="0" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="To Ico" OutputType="Ico" IsDefaultSettings="true">
         <InputTypes>xcf</InputTypes>
@@ -664,7 +664,7 @@
         <InputTypes>tiff</InputTypes>
         <InputTypes>webp</InputTypes>
         <InputPostConversionAction>None</InputPostConversionAction>
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="To Pdf" OutputType="Pdf" IsDefaultSettings="true">
         <InputTypes>xcf</InputTypes>
@@ -698,7 +698,7 @@
         <InputTypes>tiff</InputTypes>
         <InputTypes>webp</InputTypes>
         <InputPostConversionAction>None</InputPostConversionAction>
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 75%/To Mkv" OutputType="Mkv" IsDefaultSettings="true">
         <InputTypes>gif</InputTypes>
@@ -727,7 +727,7 @@
         <Settings Key="AudioBitrate" Value="155" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 75%/To Mp4" OutputType="Mp4" IsDefaultSettings="true">
         <InputTypes>gif</InputTypes>
@@ -756,7 +756,7 @@
         <Settings Key="AudioBitrate" Value="155" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 75%/To Webm" OutputType="Webm" IsDefaultSettings="true">
         <InputTypes>gif</InputTypes>
@@ -784,7 +784,7 @@
         <Settings Key="VideoRotation" Value="0" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 75%/To Ogv" OutputType="Ogv" IsDefaultSettings="true">
         <InputTypes>gif</InputTypes>
@@ -812,7 +812,7 @@
         <Settings Key="AudioBitrate" Value="160" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 75%/To Avi" OutputType="Avi" IsDefaultSettings="true">
         <InputTypes>gif</InputTypes>
@@ -840,7 +840,7 @@
         <Settings Key="AudioBitrate" Value="190" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 75%/To Png" OutputType="Png" IsDefaultSettings="true">
         <InputTypes>xcf</InputTypes>
@@ -869,7 +869,7 @@
         <Settings Key="ImageRotation" Value="0" />
         <Settings Key="ImageClampSizePowerOf2" Value="False" />
         <Settings Key="ImageMaximumSize" Value="0" />
-        <OutputFileNameTemplate>(p)(f)-small</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f)-small - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 75%/To Webp" OutputType="Webp" IsDefaultSettings="true">
         <InputTypes>xcf</InputTypes>
@@ -899,7 +899,7 @@
         <Settings Key="ImageRotation" Value="0" />
         <Settings Key="ImageClampSizePowerOf2" Value="False" />
         <Settings Key="ImageMaximumSize" Value="0" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 75%/To Jpg" OutputType="Jpg" IsDefaultSettings="true">
         <InputTypes>xcf</InputTypes>
@@ -929,7 +929,7 @@
         <Settings Key="ImageRotation" Value="0" />
         <Settings Key="ImageClampSizePowerOf2" Value="False" />
         <Settings Key="ImageMaximumSize" Value="0" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 25%/To Mkv" OutputType="Mkv" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -958,7 +958,7 @@
         <Settings Key="AudioBitrate" Value="155" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 25%/To Mp4" OutputType="Mp4" IsDefaultSettings="true">
         <InputTypes>gif</InputTypes>
@@ -987,7 +987,7 @@
         <Settings Key="AudioBitrate" Value="155" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 25%/To Webm" OutputType="Webm" IsDefaultSettings="true">
         <InputTypes>avi</InputTypes>
@@ -1015,7 +1015,7 @@
         <Settings Key="VideoRotation" Value="0" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 25%/To Ogv" OutputType="Ogv" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -1043,7 +1043,7 @@
         <Settings Key="AudioBitrate" Value="160" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 25%/To Avi" OutputType="Avi" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -1071,7 +1071,7 @@
         <Settings Key="AudioBitrate" Value="190" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 25%/To Png" OutputType="Png" IsDefaultSettings="true">
         <InputTypes>xcf</InputTypes>
@@ -1100,7 +1100,7 @@
         <Settings Key="ImageRotation" Value="0" />
         <Settings Key="ImageClampSizePowerOf2" Value="False" />
         <Settings Key="ImageMaximumSize" Value="0" />
-        <OutputFileNameTemplate>(p)(f)-small</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f)-small - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 25%/To Webp" OutputType="Webp" IsDefaultSettings="true">
         <InputTypes>xcf</InputTypes>
@@ -1130,7 +1130,7 @@
         <Settings Key="ImageRotation" Value="0" />
         <Settings Key="ImageClampSizePowerOf2" Value="False" />
         <Settings Key="ImageMaximumSize" Value="0" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 25%/To Jpg" OutputType="Jpg" IsDefaultSettings="true">
         <InputTypes>xcf</InputTypes>
@@ -1160,7 +1160,7 @@
         <Settings Key="ImageRotation" Value="0" />
         <Settings Key="ImageClampSizePowerOf2" Value="False" />
         <Settings Key="ImageMaximumSize" Value="0" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 720p/To Mkv" OutputType="Mkv" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -1189,7 +1189,7 @@
         <Settings Key="AudioBitrate" Value="155" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="True" />
         <Settings Key="FFMPEGCustomCommand" Value="-c:v libx264 -preset medium -crf 21 -c:a aac -qscale:a 1.3 -vf &quot;scale=1280:720,format=yuv420p&quot;" />
-        <OutputFileNameTemplate>(p)(f) (720p)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) (720p) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 720p/To Mp4" OutputType="Mp4" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -1218,7 +1218,7 @@
         <Settings Key="AudioBitrate" Value="128" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="True" />
         <Settings Key="FFMPEGCustomCommand" Value="-c:v libx264 -preset medium -crf 21 -c:a aac -qscale:a 1.3 -vf &quot;scale=1280:720,format=yuv420p&quot;" />
-        <OutputFileNameTemplate>(p)(f) (720p)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) (720p) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 720p/To Webm" OutputType="Webm" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -1246,7 +1246,7 @@
         <Settings Key="VideoRotation" Value="0" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="True" />
         <Settings Key="FFMPEGCustomCommand" Value="-c:v libvpx-vp9 -crf 23 -b:v 0 -c:a libvorbis -qscale:a 5 -vf &quot;scale=1280:720,format=yuv420p&quot;" />
-        <OutputFileNameTemplate>(p)(f) (720p)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) (720p) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 720p/To Ogv" OutputType="Ogv" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -1274,7 +1274,7 @@
         <Settings Key="AudioBitrate" Value="160" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="True" />
         <Settings Key="FFMPEGCustomCommand" Value="-codec:v libtheora -qscale:v 8 -codec:a libvorbis -qscale:a 5 -vf &quot;scale=1280:720,format=yuv420p&quot;" />
-        <OutputFileNameTemplate>(p)(f) (720p)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) (720p) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 720p/To Avi" OutputType="Avi" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -1302,7 +1302,7 @@
         <Settings Key="AudioBitrate" Value="190" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="True" />
         <Settings Key="FFMPEGCustomCommand" Value="-c:v mpeg4 -vtag xvid -qscale:v 4 -c:a libmp3lame -qscale:a 2  -id3v2_version 3 -write_id3v1 1 -vf &quot;scale=1280:720,format=yuv420p&quot;" />
-        <OutputFileNameTemplate>(p)(f) (720p)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) (720p) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 1080p/To Mkv" OutputType="Mkv" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -1331,7 +1331,7 @@
         <Settings Key="AudioBitrate" Value="155" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="True" />
         <Settings Key="FFMPEGCustomCommand" Value="-c:v libx264 -preset medium -crf 21 -c:a aac -qscale:a 1.3 -vf &quot;scale=1920:1080,format=yuv420p&quot;" />
-        <OutputFileNameTemplate>(p)(f) (1080p)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) (1080p) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 1080p/To Mp4" OutputType="Mp4" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -1360,7 +1360,7 @@
         <Settings Key="AudioBitrate" Value="128" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="True" />
         <Settings Key="FFMPEGCustomCommand" Value="-c:v libx264 -preset medium -crf 21 -c:a aac -qscale:a 1.3 -vf &quot;scale=1920:1080,format=yuv420p&quot;" />
-        <OutputFileNameTemplate>(p)(f) (1080p)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) (1080p) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 1080p/To Webm" OutputType="Webm" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -1388,7 +1388,7 @@
         <Settings Key="VideoRotation" Value="0" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="True" />
         <Settings Key="FFMPEGCustomCommand" Value="-c:v libvpx-vp9 -crf 23 -b:v 0 -c:a libvorbis -qscale:a 5 -vf &quot;scale=1920:1080,format=yuv420p&quot;" />
-        <OutputFileNameTemplate>(p)(f) (1080p)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) (1080p) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 1080p/To Ogv" OutputType="Ogv" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -1416,7 +1416,7 @@
         <Settings Key="AudioBitrate" Value="160" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="True" />
         <Settings Key="FFMPEGCustomCommand" Value="-codec:v libtheora -qscale:v 8 -codec:a libvorbis -qscale:a 5 -vf &quot;scale=1920:1080,format=yuv420p&quot;" />
-        <OutputFileNameTemplate>(p)(f) (1080p)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) (1080p) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Scale 1080p/To Avi" OutputType="Avi" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -1444,7 +1444,7 @@
         <Settings Key="AudioBitrate" Value="190" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="True" />
         <Settings Key="FFMPEGCustomCommand" Value="-c:v mpeg4 -vtag xvid -qscale:v 4 -c:a libmp3lame -qscale:a 2  -id3v2_version 3 -write_id3v1 1 -vf &quot;scale=1920:1080,format=yuv420p&quot;" />
-        <OutputFileNameTemplate>(p)(f) (1080p)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) (1080p) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Rotate left/To Mkv" OutputType="Mkv" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -1473,7 +1473,7 @@
         <Settings Key="AudioBitrate" Value="155" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Rotate left/To Mp4" OutputType="Mp4" IsDefaultSettings="true">
         <InputTypes>gif</InputTypes>
@@ -1502,7 +1502,7 @@
         <Settings Key="AudioBitrate" Value="155" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Rotate left/To Mp4 (low quality)" OutputType="Mp4" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -1531,7 +1531,7 @@
         <Settings Key="AudioBitrate" Value="96" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Rotate left/To Webm" OutputType="Webm" IsDefaultSettings="true">
         <InputTypes>avi</InputTypes>
@@ -1559,7 +1559,7 @@
         <Settings Key="VideoRotation" Value="90" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Rotate left/To Ogv" OutputType="Ogv" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -1587,7 +1587,7 @@
         <Settings Key="AudioBitrate" Value="160" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Rotate left/To Avi" OutputType="Avi" IsDefaultSettings="true">
         <InputTypes>gif</InputTypes>
@@ -1615,7 +1615,7 @@
         <Settings Key="AudioBitrate" Value="190" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Rotate left/To Png" OutputType="Png" IsDefaultSettings="true">
         <InputTypes>arw</InputTypes>
@@ -1643,7 +1643,7 @@
         <Settings Key="ImageRotation" Value="90" />
         <Settings Key="ImageClampSizePowerOf2" Value="False" />
         <Settings Key="ImageMaximumSize" Value="0" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Rotate left/To Webp" OutputType="Webp" IsDefaultSettings="true">
         <InputTypes>arw</InputTypes>
@@ -1673,7 +1673,7 @@
         <Settings Key="ImageRotation" Value="90" />
         <Settings Key="ImageClampSizePowerOf2" Value="False" />
         <Settings Key="ImageMaximumSize" Value="0" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Rotate left/To Jpg" OutputType="Jpg" IsDefaultSettings="true">
         <InputTypes>arw</InputTypes>
@@ -1703,7 +1703,7 @@
         <Settings Key="ImageRotation" Value="90" />
         <Settings Key="ImageClampSizePowerOf2" Value="False" />
         <Settings Key="ImageMaximumSize" Value="0" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Rotate right/To Mkv" OutputType="Mkv" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -1732,7 +1732,7 @@
         <Settings Key="AudioBitrate" Value="155" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Rotate right/To Mp4" OutputType="Mp4" IsDefaultSettings="true">
         <InputTypes>avi</InputTypes>
@@ -1761,7 +1761,7 @@
         <Settings Key="AudioBitrate" Value="155" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Rotate right/To Mp4 (low quality)" OutputType="Mp4" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -1790,7 +1790,7 @@
         <Settings Key="AudioBitrate" Value="96" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Rotate right/To Webm" OutputType="Webm" IsDefaultSettings="true">
         <InputTypes>avi</InputTypes>
@@ -1818,7 +1818,7 @@
         <Settings Key="VideoRotation" Value="270" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Rotate right/To Ogv" OutputType="Ogv" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -1846,7 +1846,7 @@
         <Settings Key="AudioBitrate" Value="160" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Rotate right/To Avi" OutputType="Avi" IsDefaultSettings="true">
         <InputTypes>gif</InputTypes>
@@ -1874,7 +1874,7 @@
         <Settings Key="AudioBitrate" Value="190" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="False" />
         <Settings Key="FFMPEGCustomCommand" Value="" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Rotate right/To Png" OutputType="Png" IsDefaultSettings="true">
         <InputTypes>arw</InputTypes>
@@ -1902,7 +1902,7 @@
         <Settings Key="ImageRotation" Value="270" />
         <Settings Key="ImageClampSizePowerOf2" Value="False" />
         <Settings Key="ImageMaximumSize" Value="0" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Rotate right/To Webp" OutputType="Webp" IsDefaultSettings="true">
         <InputTypes>xcf</InputTypes>
@@ -1932,7 +1932,7 @@
         <Settings Key="ImageRotation" Value="270" />
         <Settings Key="ImageClampSizePowerOf2" Value="False" />
         <Settings Key="ImageMaximumSize" Value="0" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Rotate right/To Jpg" OutputType="Jpg" IsDefaultSettings="true">
         <InputTypes>xcf</InputTypes>
@@ -1962,7 +1962,7 @@
         <Settings Key="ImageRotation" Value="270" />
         <Settings Key="ImageClampSizePowerOf2" Value="False" />
         <Settings Key="ImageMaximumSize" Value="0" />
-        <OutputFileNameTemplate>(p)(f)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Tempo - Pitch/To Mp3 (25% slower)" OutputType="Mp3" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -1999,7 +1999,7 @@
         <Settings Key="AudioChannelCount" Value="0" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="True" />
         <Settings Key="FFMPEGCustomCommand" Value="-b:a 192k -filter:a &quot;atempo=0.75&quot;" />
-        <OutputFileNameTemplate>(p)(f) (slow)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) (slow) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Tempo - Pitch/To Mp3 (25% faster)" OutputType="Mp3" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -2036,7 +2036,7 @@
         <Settings Key="AudioChannelCount" Value="0" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="True" />
         <Settings Key="FFMPEGCustomCommand" Value="-b:a 192k -filter:a &quot;atempo=1.25&quot;" />
-        <OutputFileNameTemplate>(p)(f) (fast)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) (fast) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Tempo - Pitch/To Mp3 (pitched -1st)" OutputType="Mp3" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -2073,7 +2073,7 @@
         <Settings Key="AudioChannelCount" Value="0" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="True" />
         <Settings Key="FFMPEGCustomCommand" Value="-filter:a &quot;rubberband=pitch=0.9438743126816935&quot;" />
-        <OutputFileNameTemplate>(p)(f) (-1st)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) (-1st) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <ConversionPreset Name="Tempo - Pitch/To Mp3 (pitched +1st)" OutputType="Mp3" IsDefaultSettings="true">
         <InputTypes>3gp</InputTypes>
@@ -2110,7 +2110,7 @@
         <Settings Key="AudioChannelCount" Value="0" />
         <Settings Key="EnableFFMPEGCustomCommand" Value="True" />
         <Settings Key="FFMPEGCustomCommand" Value="-filter:a &quot;rubberband=pitch=1.059463094352953&quot;" />
-        <OutputFileNameTemplate>(p)(f) (+1st)</OutputFileNameTemplate>
+        <OutputFileNameTemplate>(p)(f) (+1st) - (preset)</OutputFileNameTemplate>
     </ConversionPreset>
     <CheckUpgradeAtStartup>true</CheckUpgradeAtStartup>
     <CopyFilesInClipboardAfterConversion>false</CopyFilesInClipboardAfterConversion>

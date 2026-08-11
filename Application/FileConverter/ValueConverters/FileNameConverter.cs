@@ -10,9 +10,9 @@ namespace FileConverter.ValueConverters
     {
         public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
         {
-            if (values == null || values.Length != 3)
+            if (values == null || values.Length < 3 || values.Length > 4)
             {
-                throw new ArgumentException("The values must contains the input file path, the output file extension and the ouput file template.");
+                throw new ArgumentException("The values must contains the input file path, the output file extension, the ouput file template and optionally the preset name.");
             }
 
             if (!(values[1] is OutputType))
@@ -23,8 +23,9 @@ namespace FileConverter.ValueConverters
             string inputFilePath = values[0] as string;
             OutputType outputFileExtension = (OutputType)values[1];
             string outputFileTemplate = values[2] as string;
+            string presetName = values.Length > 3 ? values[3] as string : null;
 
-            return PathHelpers.GenerateFilePathFromTemplate(inputFilePath, outputFileExtension, outputFileTemplate, 1, 3);
+            return PathHelpers.GenerateFilePathFromTemplate(inputFilePath, outputFileExtension, outputFileTemplate, 1, 3, presetName);
         }
 
         public object[] ConvertBack(object value, Type[] targetType, object parameter, CultureInfo culture)

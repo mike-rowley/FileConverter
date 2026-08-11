@@ -17,6 +17,7 @@ namespace FileConverter
         private static Regex filenameRegex = new Regex(@"[^\\]*", RegexOptions.RightToLeft);
         private static Regex directoryRegex = new Regex(@"^(?<drive>\\\\[^\\/:*?""""<>|\r\n]+\\|[A-Za-z]:\\)(?:(?<folders>[^\\]*)\\)*");
         private static Regex dateRegex = new Regex(@"\(d:(?<format>[^)]*)\)");
+        private static readonly char[] invalidFileNameChars = System.IO.Path.GetInvalidFileNameChars();
 
         public static bool IsPathDriveLetterValid(string path)
         {
@@ -139,7 +140,39 @@ namespace FileConverter
             return true;
         }
 
-        public static string GenerateFilePathFromTemplate(string inputFilePath, OutputType outputFileExtension, string outputFilePathTemplate, int numberIndex, int numberMax)
+        /// <summary>
+        /// Remove from the given name the characters that are not allowed in a file name.
+        /// </summary>
+        /// <param name="name">The name to sanitize.</param>
+        /// <returns>A name that can safely be inserted in a file name.</returns>
+        /// <remarks>
+        /// A preset name can contain characters that are invalid in a path, the folder separator '/' being the most
+        /// common one since it is used to sort the presets in folders (e.g. 'Scale 75%/To Mkv'). The folders are part
+        /// of what distinguishes a preset from another, so the separator is replaced instead of being dropped.
+        /// </remarks>
+        public static string SanitizeForFileName(string name)
+        {
+            if (string.IsNullOrEmpty(name))
+            {
+                return string.Empty;
+            }
+
+            name = name.Replace("/", " - ").Replace("\\", " - ");
+
+            StringBuilder sanitizedName = new StringBuilder(name.Length);
+            for (int index = 0; index < name.Length; index++)
+            {
+                char character = name[index];
+                if (Array.IndexOf(PathHelpers.invalidFileNameChars, character) < 0)
+                {
+                    sanitizedName.Append(character);
+                }
+            }
+
+            return sanitizedName.ToString().Trim();
+        }
+
+        public static string GenerateFilePathFromTemplate(string inputFilePath, OutputType outputFileExtension, string outputFilePathTemplate, int numberIndex, int numberMax, string presetName = null)
         {
             if (string.IsNullOrEmpty(inputFilePath))
             {
@@ -182,6 +215,19 @@ namespace FileConverter
             outputPath = outputPath.Replace("(inputext)", inputExtension);
             outputPath = outputPath.Replace("(i)", inputExtension);
             outputPath = outputPath.Replace("(I)", inputExtension.ToUpperInvariant());
+
+            // Name of the preset used for the conversion. '(preset)' keeps the folders it is stored in, because a lot
+            // of presets share the same short name ('To Mp4' exists under 'Scale 720p', 'Rotate left', and so on) and
+            // the folders are the only thing telling them apart. '(preset:short)' gives the context menu entry alone.
+            string presetShortName = presetName ?? string.Empty;
+            int lastFolderSeparatorIndex = presetShortName.LastIndexOf('/');
+            if (lastFolderSeparatorIndex >= 0)
+            {
+                presetShortName = presetShortName.Substring(lastFolderSeparatorIndex + 1);
+            }
+
+            outputPath = outputPath.Replace("(preset:short)", PathHelpers.SanitizeForFileName(presetShortName));
+            outputPath = outputPath.Replace("(preset)", PathHelpers.SanitizeForFileName(presetName));
 
             string myDocumentsFolder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments) + "\\";
             outputPath = outputPath.Replace("(p:d)", myDocumentsFolder);
