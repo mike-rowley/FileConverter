@@ -11,7 +11,7 @@
     <d:DesignProperties.DataContext>
         <conversionJobs:ConversionJob />
     </d:DesignProperties.DataContext>
-    <Border BorderBrush="#FF000000" BorderThickness="0" CornerRadius="8" Background="{Binding State, Converter={StaticResource ConversionStateToBrush}, ConverterParameter=Background}">
+    <Border BorderBrush="{DynamicResource Control_BorderBrush}" BorderThickness="0" CornerRadius="8" Background="{Binding State, Converter={StaticResource ConversionStateToBrush}, ConverterParameter=Background}">
         <Grid Margin="0,4">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -28,12 +28,12 @@
                     <ColumnDefinition Width="*" MinWidth="100" />
                 </Grid.ColumnDefinitions>
 
-                <TextBlock Grid.Row="0" Grid.Column="0" Text="{Binding OutputFilePath}" Foreground="#DD000000" FontWeight="Bold" />
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="{Binding OutputFilePath}" Foreground="{DynamicResource DarkForegroundBrush}" FontWeight="Bold" />
 
                 <StackPanel Grid.Row="1" Grid.Column="0" Margin="10,0,0,0">
                     <WrapPanel>
-                        <TextBlock Text="{x:Static project:Resources.ConvertedFrom}" Foreground="#AA000000" FontSize="11" FontStyle="Italic" Margin="0,0,5,0" />
-                        <TextBlock Text="{Binding InputFilePath}" Foreground="#AA000000" FontSize="11" FontStyle="Italic" />
+                        <TextBlock Text="{x:Static project:Resources.ConvertedFrom}" Foreground="{DynamicResource LightForegroundBrush}" FontSize="11" FontStyle="Italic" Margin="0,0,5,0" />
+                        <TextBlock Text="{Binding InputFilePath}" Foreground="{DynamicResource LightForegroundBrush}" FontSize="11" FontStyle="Italic" />
                     </WrapPanel>
                     <TextBlock Text="{Binding ErrorMessage}" Foreground="{Binding State, ConverterParameter=Foreground, Converter={StaticResource ConversionStateToBrush}}" FontSize="14" />
                 </StackPanel>
