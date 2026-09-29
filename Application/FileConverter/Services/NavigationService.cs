@@ -10,6 +10,7 @@ namespace FileConverter.Services
     using CommunityToolkit.Mvvm.DependencyInjection;
 
     using FileConverter.Annotations;
+    using FileConverter.Views;
 
     using Application = FileConverter.Application;
 
@@ -43,6 +44,7 @@ namespace FileConverter.Services
                 if (pageInfo.Instance == null || !pageInfo.Instance.IsLoaded)
                 {
                     pageInfo.Instance = Activator.CreateInstance(pageInfo.Type) as Window;
+                    WindowTheme.Apply(pageInfo.Instance);
                 }
 
                 Diagnostics.Debug.Log($"Show page {pageKey}.");
