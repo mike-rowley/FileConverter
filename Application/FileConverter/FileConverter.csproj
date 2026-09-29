@@ -108,6 +108,7 @@
       <DependentUpon>ConversionJobControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\IconButton.cs" />
+    <Compile Include="Controls\PathTextBlock.cs" />
     <Compile Include="Controls\EncodingQualitySliderControl.xaml.cs">
       <DependentUpon>EncodingQualitySliderControl.xaml</DependentUpon>
     </Compile>

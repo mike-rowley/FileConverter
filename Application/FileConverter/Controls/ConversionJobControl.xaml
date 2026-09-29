@@ -5,6 +5,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
         xmlns:project="clr-namespace:FileConverter.Properties"
         xmlns:conversionJobs="clr-namespace:FileConverter.ConversionJobs"
+        xmlns:controls="clr-namespace:FileConverter.Controls"
         x:Class="FileConverter.Controls.ConversionJobControl"
         mc:Ignorable="d" 
         d:DesignHeight="100" d:DesignWidth="800">
@@ -28,13 +29,16 @@
                     <ColumnDefinition Width="*" MinWidth="100" />
                 </Grid.ColumnDefinitions>
 
-                <TextBlock Grid.Row="0" Grid.Column="0" Text="{Binding OutputFilePath}" Foreground="{DynamicResource DarkForegroundBrush}" FontWeight="Bold" />
+                <!-- Long paths are shortened in their middle so the file name stays visible; the full path is in the tooltip. -->
+                <controls:PathTextBlock Grid.Row="0" Grid.Column="0" Margin="0,0,12,0" Text="{Binding OutputFilePath}" ToolTip="{Binding OutputFilePath}"
+                                        Foreground="{DynamicResource DarkForegroundBrush}" FontWeight="Bold" />
 
                 <StackPanel Grid.Row="1" Grid.Column="0" Margin="10,0,0,0">
-                    <WrapPanel>
-                        <TextBlock Text="{x:Static project:Resources.ConvertedFrom}" Foreground="{DynamicResource LightForegroundBrush}" FontSize="11" FontStyle="Italic" Margin="0,0,5,0" />
-                        <TextBlock Text="{Binding InputFilePath}" Foreground="{DynamicResource LightForegroundBrush}" FontSize="11" FontStyle="Italic" />
-                    </WrapPanel>
+                    <DockPanel Margin="0,0,12,0">
+                        <TextBlock DockPanel.Dock="Left" Text="{x:Static project:Resources.ConvertedFrom}" Foreground="{DynamicResource LightForegroundBrush}" FontSize="11" FontStyle="Italic" Margin="0,0,5,0" />
+                        <controls:PathTextBlock Text="{Binding InputFilePath}" ToolTip="{Binding InputFilePath}"
+                                                Foreground="{DynamicResource LightForegroundBrush}" FontSize="11" FontStyle="Italic" />
+                    </DockPanel>
                     <TextBlock Text="{Binding ErrorMessage}" Foreground="{Binding State, ConverterParameter=Foreground, Converter={StaticResource ConversionStateToBrush}}" FontSize="14" />
                 </StackPanel>
 
