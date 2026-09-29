@@ -43,6 +43,8 @@
     <Color x:Key="Button_MouseOver_BackgroundColor">#14405F</Color>
     <Color x:Key="TileButton_MouseOver_BackgroundColor">#2E2E35</Color>
     <Color x:Key="TileButton_MouseOver_BorderColor">#4A4A55</Color>
+    <Color x:Key="ScrollBar_ThumbColor">#4A4A55</Color>
+    <Color x:Key="ScrollBar_Thumb_MouseOverColor">#6A6A78</Color>
 
     <!-- Custom styles colors -->
     <SolidColorBrush x:Key="Button_BackgroundBrush" Color="{StaticResource Button_BackgroundColor}" />
@@ -74,6 +76,11 @@
     <SolidColorBrush x:Key="TreeView_BorderBrush" Color="{StaticResource Control_BorderColor}" />
 
     <SolidColorBrush x:Key="Window_BackgroundBrush" Color="{StaticResource Window_BackgroundColor}" />
+
+    <SolidColorBrush x:Key="ScrollBar_BackgroundBrush" Color="{StaticResource BackgroundColor}" />
+    <SolidColorBrush x:Key="ScrollBar_ThumbBrush" Color="{StaticResource ScrollBar_ThumbColor}" />
+    <SolidColorBrush x:Key="ScrollBar_Thumb_MouseOverBrush" Color="{StaticResource ScrollBar_Thumb_MouseOverColor}" />
+    <SolidColorBrush x:Key="ScrollBar_Thumb_DraggingBrush" Color="{StaticResource MainLightColor}" />
 
     <!-- Markdown -->
     <SolidColorBrush x:Key="Markdown_ForegroundBrush" Color="{StaticResource LightForegroundColor}" />
